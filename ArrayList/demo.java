@@ -21,7 +21,7 @@ class ArrayList {
 	
 	public void add(Object ele,int index)
 	{
-		if(index>size() || index<0)
+		if(index>=size() || index<0)
 			throw new ArrayIndexOutOfBoundsException();
 		if(cnt==a.length)add(ele);
 
@@ -33,21 +33,21 @@ class ArrayList {
 	
 	public Object get(int index)
 	{
-		if(index>size() || index<0)
+		if(index>=size() || index<0)
 			throw new ArrayIndexOutOfBoundsException();
 		return a[index];
 	}
 	
 	public void set(int index, Object ele)
 	{
-		if(index>size() || index<0)
+		if(index>=size() || index<0)
 			throw new ArrayIndexOutOfBoundsException();
 		
 		a[index]=ele;
 	}
 	public Object remove(int index)
 	{
-		if(index>size() || index<0)
+		if(index>=size() || index<0)
 			throw new ArrayIndexOutOfBoundsException();
 		
 		Object ele=a[index];
